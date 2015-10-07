@@ -155,7 +155,7 @@ int stringAlgorithm()
     cout<<"str = "<<str<<endl;
     return 0;
 }
-int main(int argc, const char * argv[])
+int mainString(int argc, const char * argv[])
 {
     int rv = 0;
 //    rv = stringInit();

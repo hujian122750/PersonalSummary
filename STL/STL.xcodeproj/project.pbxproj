@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC35F581BC3FCEE00D97FCB /* STLString.cpp */; };
+		BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		BFC35F551BC3FCEE00D97FCB /* STL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STL; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC35F581BC3FCEE00D97FCB /* STLString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLString.cpp; sourceTree = "<group>"; };
+		BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLVector.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC35F581BC3FCEE00D97FCB /* STLString.cpp */,
+				BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */,
 			);
 			path = STL;
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */,
 				BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +239,7 @@
 				BFC35F5E1BC3FCEE00D97FCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
