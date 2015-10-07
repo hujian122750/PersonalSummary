@@ -113,7 +113,7 @@ int vectorDeleteAndInsert()
     printVector(vec);
     return 0;
 }
-int main()
+int mainVector()
 {
     int rv = 0;
 //    rv = vectorInit();
