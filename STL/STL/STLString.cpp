@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 int stringInit()
 {
@@ -121,6 +122,39 @@ int stringDeleteAndInsert()
     cout<<"str = "<<str<<endl;
     return 0;
 }
+int to_upper(int c)
+{
+    if (islower(c))
+    {
+        return (c-32);
+    }
+    
+    return c;
+}
+/*////////////////////////////////
+ template < class InputIterator, class OutputIterator, class UnaryOperator >
+ OutputIterator transform ( InputIterator first1,  // 源容器的起始地址
+ InputIterator last1,    // 源容器的终止地址
+ OutputIterator result,  // 目标容器的起始地址
+ UnaryOperator op );     // 函数指针
+ // typedef 目标容器元素类型 (*UnaryOperator)(源容器元素类型);
+ 
+ template < class InputIterator1, class InputIterator2,
+ class OutputIterator, class BinaryOperator >
+ OutputIterator transform ( InputIterator1 first1,     // 源容器1的起始地址
+ InputIterator1 last1,       // 源容器1的终止地址
+ InputIterator2 first2,      // 源容器2的起始地址，元素个数与1相同
+ OutputIterator result,      // 目标容器的起始地址，元素个数与1相同
+ BinaryOperator binary_op ); // 函数指针
+ // typedef 目标容器元素类型 (*BinaryOperator)(源容器1元素类型，源容器2元素类型);*/
+int stringAlgorithm()
+{
+    string str = "STL Standard Template Libray";
+//    函数的入口地址
+    transform(str.begin(), str.end(), str.begin(), to_upper);
+    cout<<"str = "<<str<<endl;
+    return 0;
+}
 int main(int argc, const char * argv[])
 {
     int rv = 0;
@@ -129,7 +163,8 @@ int main(int argc, const char * argv[])
 //    rv = stringExchange();
 //    rv = stringLink();
 //    rv = stringFindAndReplace();
-    rv = stringDeleteAndInsert();
+//    rv = stringDeleteAndInsert();
+    rv = stringAlgorithm();
 
     cout<<"*****STL String*****"<<endl;
     return 0;
