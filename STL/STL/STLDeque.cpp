@@ -43,7 +43,7 @@ int dequeDeal()
     
     return 0;
 }
-int main()
+int mainDeque()
 {
 //    双端队列
     int rv = 0;

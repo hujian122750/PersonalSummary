@@ -10,6 +10,7 @@
 		BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC35F581BC3FCEE00D97FCB /* STLString.cpp */; };
 		BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFC9783D1BC56B2000A7D734 /* STLDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC9783C1BC56B2000A7D734 /* STLDeque.cpp */; settings = {ASSET_TAGS = (); }; };
+		BFD4BB701BC6C32400EE47E9 /* STLStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD4BB6F1BC6C32400EE47E9 /* STLStack.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		BFC35F581BC3FCEE00D97FCB /* STLString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLString.cpp; sourceTree = "<group>"; };
 		BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLVector.cpp; sourceTree = "<group>"; };
 		BFC9783C1BC56B2000A7D734 /* STLDeque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLDeque.cpp; sourceTree = "<group>"; };
+		BFD4BB6F1BC6C32400EE47E9 /* STLStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLStack.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				BFC35F581BC3FCEE00D97FCB /* STLString.cpp */,
 				BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */,
 				BFC9783C1BC56B2000A7D734 /* STLDeque.cpp */,
+				BFD4BB6F1BC6C32400EE47E9 /* STLStack.cpp */,
 			);
 			path = STL;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			files = (
 				BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */,
 				BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */,
+				BFD4BB701BC6C32400EE47E9 /* STLStack.cpp in Sources */,
 				BFC9783D1BC56B2000A7D734 /* STLDeque.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
