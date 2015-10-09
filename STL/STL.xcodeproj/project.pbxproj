@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFBFE5901BC8038B00992A89 /* STLQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */; settings = {ASSET_TAGS = (); }; };
+		BFBFE5921BC80C1100992A89 /* STLList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBFE5911BC80C1100992A89 /* STLList.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC35F581BC3FCEE00D97FCB /* STLString.cpp */; };
 		BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFC9783D1BC56B2000A7D734 /* STLDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC9783C1BC56B2000A7D734 /* STLDeque.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLQueue.cpp; sourceTree = "<group>"; };
+		BFBFE5911BC80C1100992A89 /* STLList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLList.cpp; sourceTree = "<group>"; };
 		BFC35F551BC3FCEE00D97FCB /* STL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STL; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC35F581BC3FCEE00D97FCB /* STLString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STLString.cpp; sourceTree = "<group>"; };
 		BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLVector.cpp; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				BFC9783A1BC4E4C800A7D734 /* STLVector.cpp */,
 				BFC9783C1BC56B2000A7D734 /* STLDeque.cpp */,
 				BFD4BB6F1BC6C32400EE47E9 /* STLStack.cpp */,
+				BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */,
+				BFBFE5911BC80C1100992A89 /* STLList.cpp */,
 			);
 			path = STL;
 			sourceTree = "<group>";
@@ -127,10 +133,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBFE5901BC8038B00992A89 /* STLQueue.cpp in Sources */,
 				BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */,
 				BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */,
 				BFD4BB701BC6C32400EE47E9 /* STLStack.cpp in Sources */,
 				BFC9783D1BC56B2000A7D734 /* STLDeque.cpp in Sources */,
+				BFBFE5921BC80C1100992A89 /* STLList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@ int stackDeal()
     printStack(stackTmp);
     return 0;
 }
-int main()
+int mainStack()
 {
     int rv = 0;
     rv = stackDeal();
