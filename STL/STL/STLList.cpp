@@ -73,7 +73,7 @@ int listDeal()
     
     return 0;
 }
-int main()
+int mainList()
 {
     int rv = 0;
     rv = listDeal();

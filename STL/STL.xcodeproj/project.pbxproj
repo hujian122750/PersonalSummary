@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF66EA311BC9576200500655 /* STLPriority_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF66EA301BC9576200500655 /* STLPriority_queue.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFBFE5901BC8038B00992A89 /* STLQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFBFE5921BC80C1100992A89 /* STLList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBFE5911BC80C1100992A89 /* STLList.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC35F581BC3FCEE00D97FCB /* STLString.cpp */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF66EA301BC9576200500655 /* STLPriority_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLPriority_queue.cpp; sourceTree = "<group>"; };
 		BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLQueue.cpp; sourceTree = "<group>"; };
 		BFBFE5911BC80C1100992A89 /* STLList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLList.cpp; sourceTree = "<group>"; };
 		BFC35F551BC3FCEE00D97FCB /* STL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STL; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				BFD4BB6F1BC6C32400EE47E9 /* STLStack.cpp */,
 				BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */,
 				BFBFE5911BC80C1100992A89 /* STLList.cpp */,
+				BF66EA301BC9576200500655 /* STLPriority_queue.cpp */,
 			);
 			path = STL;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				BFD4BB701BC6C32400EE47E9 /* STLStack.cpp in Sources */,
 				BFC9783D1BC56B2000A7D734 /* STLDeque.cpp in Sources */,
 				BFBFE5921BC80C1100992A89 /* STLList.cpp in Sources */,
+				BF66EA311BC9576200500655 /* STLPriority_queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
