@@ -104,6 +104,8 @@ int setDeal2()
     setTmp.insert(person(24, "lisan"));   //根据set的特性，此条数据插入不进去
 //    问题：怎么判断这个insert插入成功了呢＝＝＝＝＝》函数返回值判断
     pair<set<person, func_person>::iterator,bool> pairTmp;
+//    pair为对组，可以将两个值视为一个单元，pair<T1,T2>  T1、T2为两个值的类型
+//    pair.first 为第一个值的类型，pair.second 为第二个值的类型；
     pairTmp = setTmp.insert(person(33, "zhangsan"));
     if(pairTmp.second)
     {
@@ -124,11 +126,68 @@ int setDeal2()
     
     return 0;
 }
+int setSearch()
+{
+    set<int,less<int>> set1;
+    for(int i = 9; i >= 0; i--)
+    {
+        set1.insert(i+1);
+    }
+    printSet(set1);
+    
+//    查找元素值为5的迭代器位置
+    set<int>::iterator it0 = set1.find(5);
+    cout<<"it0:"<<*it0<<endl;
+//    求元素值为5的个数
+    long cot = set1.count(5);
+    cout<<"cot="<<cot<<endl;
+    
+    
+    set<int>::iterator it1 = set1.lower_bound(5);//返回大于等于5的迭代器的位置
+    cout<<"it1: "<<*it1<<endl;
+    
+    set<int>::iterator it2 = set1.upper_bound(5);//返回大于5的迭代器的位置
+    cout<<"it2: "<<*it2<<endl;
+    
+    set1.erase(5);
+    pair<set<int>::iterator,set<int>::iterator> pair1 = set1.equal_range(5);
+//    返回两个迭代器，一个大于等于5的迭代器，一个大于5的迭代器
+    cout<<"pair1.first: "<<*(pair1.first)<<endl;
+    cout<<"pair1.second: "<<*(pair1.second)<<endl;
+    
+    return 0;
+}
+int multiSetDeal()
+{
+    multiset<int> multiset1;
+    int num = 0;
+    cout<<"Please enter a number:";
+    cin>>num;
+    while(num != 0)
+    {
+        multiset1.insert(num);
+        cout<<"Please enter a number:";
+        cin>>num;
+        
+    }
+    for(multiset<int>::iterator it = multiset1.begin(); it != multiset1.end(); it++)
+    {
+        cout<<*it<<"  ";
+    }
+    while(!multiset1.empty())
+    {
+        multiset1.erase(multiset1.begin());
+    }
+    cout<<endl;
+    return 0;
+}
 int main()
 {
     int rv = 0;
 //    rv = setDeal();
-    rv = setDeal2();
+//    rv = setDeal2();
+//    rv = setSearch();
+    rv = multiSetDeal();
     cout<<"*****STL Set*****"<<endl;
     return 0;
 }
