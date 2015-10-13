@@ -181,7 +181,7 @@ int multiSetDeal()
     cout<<endl;
     return 0;
 }
-int main()
+int mainSet()
 {
     int rv = 0;
 //    rv = setDeal();
