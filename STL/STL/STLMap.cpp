@@ -27,8 +27,16 @@ void printMap(const map<int,string> & mapTmp)
 int mapDeal()
 {
     map<int,string> map1;
-
-    map1.insert(pair<int,string>(1,"hujian"));//方法一
+//前三种的返回值都是pair<itetatir,bool>
+    pair<map<int,string>::iterator,bool> pair1 = map1.insert(pair<int,string>(1,"hujian"));//方法一
+    if(pair1.second == false)
+    {
+        cout<<"插入失败"<<endl;
+    }
+    else
+    {
+        cout<<"==="<<pair1.first->first<<"\t"<<pair1.first->second<<endl;
+    }
     map1.insert(pair<int,string>(2,"songhuan"));
     
     map1.insert(make_pair(3, "gaohang"));//方法二
@@ -39,13 +47,65 @@ int mapDeal()
     
     map1[7] = "zhangsan";//方法四
     map1[8] = "lisi";
+    map1[9] = "chenba";
+//    结论：方法四若key已经存在，则覆盖，前三种若key存在则报错；
     printMap(map1);
+    
+    map<int,string>::iterator it = map1.find(999);
+    if(it == map1.end())
+    {
+        cout<<"999 not exist!"<<endl;
+    }
+    else
+    {
+        cout<<it->first<<"\t"<<it->second<<endl;
+    }
+    
+    
+    pair<map<int,string>::iterator,map<int,string>::iterator> mypair =
+    map1.equal_range(5);
+//    返回两个迭代器，一个迭代器大于等于5，一个迭代器大雨5
+    if(mypair.second != map1.end())
+    {
+        cout<<mypair.first->first<<"\t"<<mypair.first->second<<endl;
+    }
+    
+    cout<<mypair.second->first<<"\t"<<mypair.second->second<<endl;
+    cout<<"============================="<<endl;
+//    map的删除
+    while(!map1.empty())
+    {
+        map<int,string>::iterator it = map1.begin();
+        map1.erase(it);
+    }
+    cout<<"map size:"<<map1.size()<<endl;
     return 0;
 }
+
+
+//multimap实例
+class staff
+{
+public:
+    string name;
+    int age;
+    string tel;
+    double salary;
+protected:
+private:
+};
+int multimapPro()
+{
+    return 0;
+}
+
+
+
 int main()
 {
     int rv = 0;
-    rv = mapDeal();
+//    rv = mapDeal();
+    rv = multimapPro();
     cout<<"*****STL Map*****"<<endl;
     return 0;
 }
