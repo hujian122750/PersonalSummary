@@ -10,6 +10,7 @@
 		BF66EA311BC9576200500655 /* STLPriority_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF66EA301BC9576200500655 /* STLPriority_queue.cpp */; settings = {ASSET_TAGS = (); }; };
 		BF66EA331BC9635F00500655 /* STLSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF66EA321BC9635F00500655 /* STLSet.cpp */; settings = {ASSET_TAGS = (); }; };
 		BF7DBD2E1BCD607C0070EC76 /* STLMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7DBD2D1BCD607C0070EC76 /* STLMap.cpp */; settings = {ASSET_TAGS = (); }; };
+		BFBD5DD21BD697FD00511129 /* STLSummary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBD5DD11BD697FD00511129 /* STLSummary.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFBFE5901BC8038B00992A89 /* STLQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFBFE5921BC80C1100992A89 /* STLList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBFE5911BC80C1100992A89 /* STLList.cpp */; settings = {ASSET_TAGS = (); }; };
 		BFC35F591BC3FCEE00D97FCB /* STLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC35F581BC3FCEE00D97FCB /* STLString.cpp */; };
@@ -34,6 +35,7 @@
 		BF66EA301BC9576200500655 /* STLPriority_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLPriority_queue.cpp; sourceTree = "<group>"; };
 		BF66EA321BC9635F00500655 /* STLSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLSet.cpp; sourceTree = "<group>"; };
 		BF7DBD2D1BCD607C0070EC76 /* STLMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLMap.cpp; sourceTree = "<group>"; };
+		BFBD5DD11BD697FD00511129 /* STLSummary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLSummary.cpp; sourceTree = "<group>"; };
 		BFBFE58F1BC8038B00992A89 /* STLQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLQueue.cpp; sourceTree = "<group>"; };
 		BFBFE5911BC80C1100992A89 /* STLList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STLList.cpp; sourceTree = "<group>"; };
 		BFC35F551BC3FCEE00D97FCB /* STL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STL; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				BF66EA301BC9576200500655 /* STLPriority_queue.cpp */,
 				BF66EA321BC9635F00500655 /* STLSet.cpp */,
 				BF7DBD2D1BCD607C0070EC76 /* STLMap.cpp */,
+				BFBD5DD11BD697FD00511129 /* STLSummary.cpp */,
 			);
 			path = STL;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBD5DD21BD697FD00511129 /* STLSummary.cpp in Sources */,
 				BFBFE5901BC8038B00992A89 /* STLQueue.cpp in Sources */,
 				BFC9783B1BC4E4C800A7D734 /* STLVector.cpp in Sources */,
 				BF66EA331BC9635F00500655 /* STLSet.cpp in Sources */,

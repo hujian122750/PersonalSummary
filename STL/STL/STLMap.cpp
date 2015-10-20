@@ -64,7 +64,7 @@ int mapDeal()
     
     pair<map<int,string>::iterator,map<int,string>::iterator> mypair =
     map1.equal_range(5);
-//    返回两个迭代器，一个迭代器大于等于5，一个迭代器大雨5
+//    返回两个迭代器，一个迭代器大于等于5，一个迭代器大于5
     if(mypair.second != map1.end())
     {
         cout<<mypair.first->first<<"\t"<<mypair.first->second<<endl;
@@ -91,17 +91,50 @@ public:
     int age;
     string tel;
     double salary;
+    staff(string _name,int _age)
+    {
+        this->name = _name;
+        this->age = _age;
+    }
+//    staff(const staff & stf)
+//    {
+//    }
 protected:
 private:
 };
 int multimapPro()
 {
+    multimap<string,staff> map;
+    for(int i = 0; i < 5; i++)
+    {
+        staff stf("name"+to_string(i),i+20);
+        map.insert(multimap<string,staff>::value_type(to_string(i+1),stf));
+    }
+//    map.insert(multimap<string,staff>::value_type());
+    for(multimap<string,staff>::iterator it = map.begin(); it != map.end(); it++)
+    {
+        cout<<it->first<<"\t"<<it->second.name<<endl;
+    }
+    cout<<"map count = "<<map.count(to_string(1))<<endl;
+    
+    
+//    查找key为3的所有对象
+    long nums = map.count(to_string(3));
+    int tag = 0;
+    multimap<string,staff>::iterator it = map.find(to_string(3));
+    while(it != map.end() && tag < nums)
+    {
+        cout<<it->first<<"\t"<<it->second.name<<endl;   //也可以直接修改multimap的值
+        it++;
+        tag++;
+    }
+    
     return 0;
 }
 
 
 
-int main()
+int mainMap()
 {
     int rv = 0;
 //    rv = mapDeal();
@@ -109,3 +142,9 @@ int main()
     cout<<"*****STL Map*****"<<endl;
     return 0;
 }
+
+
+
+
+
+
