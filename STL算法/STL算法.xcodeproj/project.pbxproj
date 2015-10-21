@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFBD5DE01BD6A08900511129 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBD5DDF1BD6A08900511129 /* main.cpp */; };
+		BFBD5DE81BD6A18F00511129 /* STL_Algorithm01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBD5DE61BD6A18F00511129 /* STL_Algorithm01.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		BFBD5DDC1BD6A08900511129 /* STL算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "STL算法"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFBD5DDF1BD6A08900511129 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BFBD5DE61BD6A18F00511129 /* STL_Algorithm01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STL_Algorithm01.cpp; sourceTree = "<group>"; };
+		BFBD5DE71BD6A18F00511129 /* STL_Algorithm01.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STL_Algorithm01.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		BFBD5DDE1BD6A08900511129 /* STL算法 */ = {
 			isa = PBXGroup;
 			children = (
-				BFBD5DDF1BD6A08900511129 /* main.cpp */,
+				BFBD5DE61BD6A18F00511129 /* STL_Algorithm01.cpp */,
+				BFBD5DE71BD6A18F00511129 /* STL_Algorithm01.hpp */,
 			);
 			path = "STL算法";
 			sourceTree = "<group>";
@@ -118,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBD5DE01BD6A08900511129 /* main.cpp in Sources */,
+				BFBD5DE81BD6A18F00511129 /* STL_Algorithm01.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
