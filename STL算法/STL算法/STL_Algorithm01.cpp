@@ -76,7 +76,7 @@ int showElement2()
     }
     return 0;
 }
-int main()
+int main01()
 {
     int rv = 0;
 //    rv = showElement();
