@@ -84,7 +84,7 @@ int algorithm02_02()
     return 0;
 }
 
-int main()
+int main02()
 {
     int rv = 0;
 //    rv = algorithm02_01();

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BF8131DA1BDE684200EC5307 /* STL_Algorithm02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8131D81BDE684200EC5307 /* STL_Algorithm02.cpp */; };
+		BFB34A2A1BDFBD6E00B9CAE0 /* STL_Algorithm03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB34A281BDFBD6E00B9CAE0 /* STL_Algorithm03.cpp */; };
+		BFB34A2D1BDFCD4C00B9CAE0 /* STL_Algorithm04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFB34A2B1BDFCD4C00B9CAE0 /* STL_Algorithm04.cpp */; };
 		BFBD5DE81BD6A18F00511129 /* STL_Algorithm01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFBD5DE61BD6A18F00511129 /* STL_Algorithm01.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,10 @@
 /* Begin PBXFileReference section */
 		BF8131D81BDE684200EC5307 /* STL_Algorithm02.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STL_Algorithm02.cpp; sourceTree = "<group>"; };
 		BF8131D91BDE684200EC5307 /* STL_Algorithm02.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STL_Algorithm02.hpp; sourceTree = "<group>"; };
+		BFB34A281BDFBD6E00B9CAE0 /* STL_Algorithm03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STL_Algorithm03.cpp; sourceTree = "<group>"; };
+		BFB34A291BDFBD6E00B9CAE0 /* STL_Algorithm03.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STL_Algorithm03.hpp; sourceTree = "<group>"; };
+		BFB34A2B1BDFCD4C00B9CAE0 /* STL_Algorithm04.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STL_Algorithm04.cpp; sourceTree = "<group>"; };
+		BFB34A2C1BDFCD4C00B9CAE0 /* STL_Algorithm04.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STL_Algorithm04.hpp; sourceTree = "<group>"; };
 		BFBD5DDC1BD6A08900511129 /* STL算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "STL算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBD5DE61BD6A18F00511129 /* STL_Algorithm01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STL_Algorithm01.cpp; sourceTree = "<group>"; };
 		BFBD5DE71BD6A18F00511129 /* STL_Algorithm01.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STL_Algorithm01.hpp; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 				BFBD5DE71BD6A18F00511129 /* STL_Algorithm01.hpp */,
 				BF8131D81BDE684200EC5307 /* STL_Algorithm02.cpp */,
 				BF8131D91BDE684200EC5307 /* STL_Algorithm02.hpp */,
+				BFB34A281BDFBD6E00B9CAE0 /* STL_Algorithm03.cpp */,
+				BFB34A291BDFBD6E00B9CAE0 /* STL_Algorithm03.hpp */,
+				BFB34A2B1BDFCD4C00B9CAE0 /* STL_Algorithm04.cpp */,
+				BFB34A2C1BDFCD4C00B9CAE0 /* STL_Algorithm04.hpp */,
 			);
 			path = "STL算法";
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBD5DE81BD6A18F00511129 /* STL_Algorithm01.cpp in Sources */,
+				BFB34A2D1BDFCD4C00B9CAE0 /* STL_Algorithm04.cpp in Sources */,
+				BFB34A2A1BDFBD6E00B9CAE0 /* STL_Algorithm03.cpp in Sources */,
 				BF8131DA1BDE684200EC5307 /* STL_Algorithm02.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
