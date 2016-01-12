@@ -45,8 +45,10 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../forkTest/main.cpp 
-OBJECTS       = main.o
+SOURCES       = ../forkTest/main.cpp \
+		../forkTest/signalMain.cpp 
+OBJECTS       = main.o \
+		signalMain.o
 DIST          = ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/qdevice.pri \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/device_config.prf \
@@ -142,6 +144,7 @@ DIST          = ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_p
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/qt_config.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_post.prf \
+		../forkTest/.qmake.stash \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/default_pre.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -160,7 +163,8 @@ DIST          = ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_p
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/exceptions.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/yacc.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/lex.prf \
-		../forkTest/forkTest.pro ../forkTest/main.cpp
+		../forkTest/forkTest.pro ../forkTest/main.cpp \
+		../forkTest/signalMain.cpp
 QMAKE_TARGET  = forkTest
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = forkTest
@@ -298,6 +302,7 @@ Makefile: ../forkTest/forkTest.pro ../../../../develop/Qt5.3.1/5.3/clang_64/mksp
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/qt_config.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/default_pre.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -414,6 +419,7 @@ Makefile: ../forkTest/forkTest.pro ../../../../develop/Qt5.3.1/5.3/clang_64/mksp
 ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/qt_config.prf:
 ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/default_pre.prf:
 ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/mac/default_pre.prf:
@@ -441,7 +447,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d .tmp/forkTest1.0.0 || mkdir -p .tmp/forkTest1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/forkTest1.0.0/ && $(COPY_FILE) --parents ../forkTest/main.cpp .tmp/forkTest1.0.0/ && (cd `dirname .tmp/forkTest1.0.0` && $(TAR) forkTest1.0.0.tar forkTest1.0.0 && $(COMPRESS) forkTest1.0.0.tar) && $(MOVE) `dirname .tmp/forkTest1.0.0`/forkTest1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/forkTest1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/forkTest1.0.0/ && $(COPY_FILE) --parents ../forkTest/main.cpp ../forkTest/signalMain.cpp .tmp/forkTest1.0.0/ && (cd `dirname .tmp/forkTest1.0.0` && $(TAR) forkTest1.0.0.tar forkTest1.0.0 && $(COMPRESS) forkTest1.0.0.tar) && $(MOVE) `dirname .tmp/forkTest1.0.0`/forkTest1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/forkTest1.0.0
 
 
 clean:compiler_clean 
@@ -482,9 +488,11 @@ compiler_clean:
 
 ####### Compile
 
-main.o: ../forkTest/main.cpp ../../../../develop/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QCoreApplication \
-		../../../../develop/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qcoreapplication.h
+main.o: ../forkTest/main.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../forkTest/main.cpp
+
+signalMain.o: ../forkTest/signalMain.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o signalMain.o ../forkTest/signalMain.cpp
 
 ####### Install
 

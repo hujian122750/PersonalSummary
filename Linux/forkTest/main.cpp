@@ -63,6 +63,8 @@ int execTest()
 //僵死进程:父进程还未调用wait收集子进程的退出状态，子进程就退出了，虽然资源会被释放，但是进程表中依然存在此子进程
 //孤儿进程:父进程还未调用wait收集子进程的退出状态，父进程就退出了，此时子进程就会称为孤儿进程，但同时init进程会成为
 //        此子进程的父进程;
+//exit与return的区别，在主函数中无区别，但子函数exit会让整个程序退出;
+//abort退出进程是异常强制退出，会产生core文件
 
 int waitTest()
 {
@@ -82,7 +84,7 @@ int waitTest()
            sleep(1);
         }
         cout<<"child end"<<endl;
-        return 1000;
+        return 100;
     }
     else
     {
@@ -99,7 +101,7 @@ int waitTest()
 }
 
 
-int main()
+int main_process()
 {
     int flag = -1;
     cin>>flag;
