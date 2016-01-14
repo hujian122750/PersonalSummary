@@ -30,7 +30,7 @@ void catch_signal(int sign)
     }
 }
 
-int main(int arg, char *args[])
+int mainSignal(int arg, char *args[])
 {
     int flag = -1;
     printf("Please enter flag:");
@@ -60,3 +60,8 @@ int main(int arg, char *args[])
     }
     return 0;
 }
+//由于signal自身缺陷，比如在发送信号的过程中再发送，有可能会有问题，所以最好用sigaction函数，参见signalaction.cpp
+
+
+//kill函数将信号发送给进程，而raise函数允许进程向自身发送信号
+//raise(signo) 等价于kill(getpid(),signo)

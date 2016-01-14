@@ -16,4 +16,6 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    signalMain.cpp
+    signalMain.cpp \
+    daemonMain.cpp \
+    signalAction.cpp

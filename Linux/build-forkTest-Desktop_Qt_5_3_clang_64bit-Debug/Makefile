@@ -46,9 +46,13 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../forkTest/main.cpp \
-		../forkTest/signalMain.cpp 
+		../forkTest/signalMain.cpp \
+		../forkTest/daemonMain.cpp \
+		../forkTest/signalAction.cpp 
 OBJECTS       = main.o \
-		signalMain.o
+		signalMain.o \
+		daemonMain.o \
+		signalAction.o
 DIST          = ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/qdevice.pri \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/device_config.prf \
@@ -164,7 +168,9 @@ DIST          = ../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_p
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/yacc.prf \
 		../../../../develop/Qt5.3.1/5.3/clang_64/mkspecs/features/lex.prf \
 		../forkTest/forkTest.pro ../forkTest/main.cpp \
-		../forkTest/signalMain.cpp
+		../forkTest/signalMain.cpp \
+		../forkTest/daemonMain.cpp \
+		../forkTest/signalAction.cpp
 QMAKE_TARGET  = forkTest
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = forkTest
@@ -447,7 +453,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d .tmp/forkTest1.0.0 || mkdir -p .tmp/forkTest1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/forkTest1.0.0/ && $(COPY_FILE) --parents ../forkTest/main.cpp ../forkTest/signalMain.cpp .tmp/forkTest1.0.0/ && (cd `dirname .tmp/forkTest1.0.0` && $(TAR) forkTest1.0.0.tar forkTest1.0.0 && $(COMPRESS) forkTest1.0.0.tar) && $(MOVE) `dirname .tmp/forkTest1.0.0`/forkTest1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/forkTest1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/forkTest1.0.0/ && $(COPY_FILE) --parents ../forkTest/main.cpp ../forkTest/signalMain.cpp ../forkTest/daemonMain.cpp ../forkTest/signalAction.cpp .tmp/forkTest1.0.0/ && (cd `dirname .tmp/forkTest1.0.0` && $(TAR) forkTest1.0.0.tar forkTest1.0.0 && $(COMPRESS) forkTest1.0.0.tar) && $(MOVE) `dirname .tmp/forkTest1.0.0`/forkTest1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/forkTest1.0.0
 
 
 clean:compiler_clean 
@@ -493,6 +499,12 @@ main.o: ../forkTest/main.cpp
 
 signalMain.o: ../forkTest/signalMain.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o signalMain.o ../forkTest/signalMain.cpp
+
+daemonMain.o: ../forkTest/daemonMain.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o daemonMain.o ../forkTest/daemonMain.cpp
+
+signalAction.o: ../forkTest/signalAction.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o signalAction.o ../forkTest/signalAction.cpp
 
 ####### Install
 
