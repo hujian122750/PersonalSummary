@@ -81,6 +81,9 @@ void setdaemon()
 int main()
 {
     setdaemon();
-    printf("*********daemon process************");
+    printf("*********daemon process************\n");
     return 0;
 }
+
+//如何linux启动时自动启动一个守护进程
+//把启动命令放到/etc/rc.d/rc.local文件就可以每次启动时候自动启动服务
